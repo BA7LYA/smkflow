@@ -14,16 +14,10 @@ FetchContent_Declare(fmt
   GIT_TAG 2cac8a9
 )
 
-FetchContent_Declare(json
-  #GIT_REPOSITORY https://github.com/nlohmann/json
-  GIT_REPOSITORY https://github.com/ArthurSonzogni/nlohmann_json_cmake_fetchcontent
-  GIT_TAG master)
-
 # ------------------------------------------------------------------------------
 
 FetchContent_GetProperties(smk)
 FetchContent_GetProperties(fmt)
-FetchContent_GetProperties(json)
 
 if(NOT smk_POPULATED)
   message(STATUS "populate SMK > Start")
